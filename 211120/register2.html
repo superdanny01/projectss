@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지 수정하기</title>
+</head>
+<body>
+    <fieldset>
+        <legend>회원가입</legend>
+        <ul>
+            <li>
+                <label for="name" >이름</label>
+                <input type="text" id="name" autofocus required
+                    placeholder="4자~10자 사이, 공백없이">
+            </li>
+            <li>
+                <label for="email">이메일</label>
+                <input type="text" id="email" required>
+            </li>
+            <li>
+                <label for="password">비밀번호</label>
+                <input type="text" id="password" required
+                placeholder="문자, 숫자, 특수기호 포함 8자 이상">
+            </li>
+            <li>
+                <label for="checkpassword">비밀번호확인</label>
+                <input type="text" id="checkpassword" required>
+            </li>
+            <li>
+                <p>생년월일 추가</p><input type="date">
+            </li>
+            <li>
+                <p>비밀번호 찾기 질문</p>
+                <label>당신이 다니던 초등학교는?<input type="text" size="10"></label><br>
+                <label>당신이 좋아하는 동물은?<input type="text" size="10"></label><br>
+                <label>당신의 어머님 성함은?<input type="text" size="10"></label>
+            </li>
+            <li>
+                <p>메일로 소식 받기</p>
+                <label><input type="radio" name="disagree">수신함</label>
+                <label><input type="radio" name="disagree" checked>수신안함</label>
+            </li>
+        </ul>
+    </fieldset>
+</body>
+</html>
