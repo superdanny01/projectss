@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>flag</title>
+    <style>
+        #flag1 {
+            width: 300px;
+            height: 300px;
+            background: red;
+            background:radial-gradient(circle,red 10%,white 10% ,white );
+            border:5px dotted black;
+
+        }
+        #flag2 {
+            width: 300px;
+            height: 300px;
+            background: red;
+            background: repeating-linear-gradient(to right,blue ,blue 100px ,white 100px ,white 200px ,red 100px,red 300px );
+            border:5px dotted black;
+        }
+        #flag3 {
+            width: 300px;
+            height: 300px;
+            background: red;
+            background: repeating-linear-gradient(red, red 20px, white 20px, white 40px);
+            border:5px dotted black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="flag1"></div>
+        <div id="flag2"></div>
+        <div id="flag3"></div>
+    </div>
+</body>
+</html>
