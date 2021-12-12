@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자 3</title>
+    <style>
+        .navi {
+            padding-bottom: 10px;
+            border-bottom: 2px solid grey;
+        }
+        .navi ul {
+            list-style: none;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        .navi ul li {
+            display: inline-block;
+            padding: 10px;
+            width: 80px;
+        }
+        .navi a:link, .navi a:visited {
+            text-decoration: none;
+        }
+        .navi a:hover, .navi a:focus {
+            background-color: black;
+            color: white;
+        }
+        .navi a:active {
+            background-color: red;
+        }
+        #signup {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        #signup fieldset {
+            border: 1px solid grey;
+            margin-bottom: 30px;
+        }
+        #signup legend {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 5px;
+            padding-bottom: 10px;
+        }
+        #signup ul li {
+            list-style: none;
+            padding: 10px;
+        }
+        #signup fieldset:first-of-type label {
+            float: left;
+            font-size: 13px;
+            width: 60px;
+        }
+        #signup input:not([type=radio]) {
+            border: 1px solid grey;
+            border-radius: 3px;
+            padding: 5px;
+            width: 200px;
+        }
+        #signup input:not([type=radio]):hover {
+            border-color: red;
+        }
+        #signup input:checked + label {
+            color: red;
+            font-weight: bold;
+        }
+        #signup button {
+            border: 1px solid black;
+            border-radius: 20px;
+            font: 16px 굴림;
+            display: block;
+            margin: auto;
+            letter-spacing: 1px;
+            padding: 7px 25px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <nav class="navi">
+        <ul>
+            <li><a href="selector4.html#intro">이용 안내</a></li>
+            <li><a href="selector4.html#room">객실 소개</a></li>
+            <li><a href="selector4.html#pay">이용 요금</a></li>
+            <li><a href="selector5.html">예약 하기</a></li>
+        </ul>
+    </nav>
+
+    <form id="signup">
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input id="name" type="text" required>
+                </li>
+                <li>
+                    <label for="tel">연락처</label>
+                    <input id="tel" type="tel" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>객실 형태</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="room" id="type1">
+                    <label for="type1">1인실</label>
+                </li>
+                <li>
+                    <input type="radio" name="room" id="type2">
+                    <label for="type2">2~3인실</label>
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">제출</button>
+    </form>
+</div>
+</body>
+</html>

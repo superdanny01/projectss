@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 선택자 5</title>
+    <style>
+        li.new::after {
+            content: "NEW!!";
+            font-size: x-small;
+            background-color: red;
+            color: white;
+            padding: 2px 4px;
+            margin: 0px 10px;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+<h1>제품 목록</h1>
+<ul>
+    <li class="new">텀블러</li>
+    <li>스마트폰</li>
+    <li>마우스</li>
+    <li class="new">볼펜</li>
+</ul>
+</body>
+</html>
