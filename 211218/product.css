@@ -1,0 +1,37 @@
+#container {
+  width:1000px;
+  margin:20px auto;
+}
+h1 {
+  text-align:center;
+}
+.prod-list {
+  list-style:none;
+  padding:0;
+}
+.prod-list li {
+  float: left;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+}
+.prod-list img {
+  margin:0;
+  padding:0;
+  float:left;
+  z-index:5;
+}
+.prod-list .caption {
+    position: absolute;
+    top: 255px;
+    width: 280px;
+    height: 180px;
+    color: white;
+    background-color: rgba (0,0,0,0.5);
+    opacity: 50;
+    z-index: 10;
+
+}
+.caption:hover {
+      transform: translateY(-150px);
+}
