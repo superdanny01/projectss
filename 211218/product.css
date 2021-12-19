@@ -10,6 +10,7 @@ h1 {
   padding:0;
 }
 .prod-list li {
+    height: 200px;
   float: left;
   padding: 0;
   margin: 10px;
@@ -23,15 +24,19 @@ h1 {
 }
 .prod-list .caption {
     position: absolute;
-    top: 255px;
+    top: 245px;
     width: 280px;
     height: 180px;
     color: white;
-    background-color: rgba (0,0,0,0.5);
-    opacity: 50;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
     z-index: 10;
 
 }
-.caption:hover {
-      transform: translateY(-150px);
+
+.prod-list li:hover .caption {
+    transform: translateY(-150px);
+    transition: all 2s;
+    text-align:center;
+    opacity: 1;
 }
