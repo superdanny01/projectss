@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>moive</title>
+    <style>
+            .container {
+        position:fixed;
+        left:35px;
+        width: 870px;
+        border: 2px solid gray;
+        border-radius:5px;
+        height: 700px;
+    }
+        .box1 {
+            color:blue;
+            background-color: skyblue;
+            border: 1px solid skyblue;
+            text-align: center;
+            width: 740px;
+            height: 25px;
+            position: fixed;
+            left: 95px;
+            border-radius:5px;
+        }
+        }
+        #movie {
+            display: grid;
+            grid-template-columns: repeat(20, 20px);
+            grid-template-rows: 30px 30px;
+        }
+        .sit {
+            padding: 10px;
+            background-color: #EEEEEE;
+        }
+        .sit:nth-child(odd) {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<h3 style="color: blue;">좌석 선택</h3>
+<div class="container">
+    <div class="box1"><strong>SCREEN</strong></div>
+</div>
+<div id="movie">
+    <div class="sit">1</div>
+    <div class="sit">2</div>
+    <div class="sit">3</div>
+    <div class="sit">4</div>
+    <div class="sit">5</div>
+</div>
+</body>
+</html>
