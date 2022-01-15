@@ -5,12 +5,17 @@
     <title>quiz2</title>
 </head>
 <body>
-<button id="button1" onclick="up();">감소</button>
+<button id="button1" onclick="up();">증가</button>
+<button id="button2" onclick="down();">감소</button>
+<button id="button3" onclick="reset();">초기화</button>
+<div id="number">0</div>
 <script>
- var number = document.querySelector('#number');
- function up() {
+var number1 = document.getElementById("number").innerText;
+var number = Number(number1);
+function up() {
+    console.log(number + 1);
+}
 
- }
 
 </script>
 </body>
