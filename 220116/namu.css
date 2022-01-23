@@ -1,58 +1,91 @@
 .day {
-    text-align: right;
+text-align: right;
 }
 .data {
-    width: 97%;
-    height: 25px;
-    border: 1px solid #ccc;
-    margin: 5px;
-    border-radius: 4px;
+width: 97%;
+height: 25px;
+border: 1px solid #ccc;
+margin: 5px;
+border-radius: 4px;
 }
 .menu {
-    float:left;
-    width:15%;
-    height: 200px;
-    border:1px solid black;
+float:left;
+width:15%;
+height: 200px;
+border:1px solid black;
 }
 
 #container {
-    border: 1px solid black;
-    width: 100%;
-    margin: 20px auto;
+border: 1px solid black;
+width: 100%;
 }
 #header {
-    border: 2px solid black;
-    width: 100%;
-    height: 65px;
-    background-color: red;
+border: 2px solid black;
+width: 100%;
+height: 65px;
+background-color: red;
+}
 
+#header > h1 {
+width: 30%;
+float:left;
 }
 
 #menus {
-    height: 1000px;
-    position: fixed;
-    left: 300px;
-    top:10px;
-    font-size: 20px;
+font-size: 20px;
+float: left;
 }
 ul li {list-style-type: none; float: left; margin-left: 100px;}
 
 #sidebar {
-    width: 300px;
-    height: 500px;
+    width: 30%;
+    height: 2000px;
     background-color: #E9E9E9;
     float: left;
-    }
-    .box1 {
-      width: 284px;
-      border:1px solid black;
-      float: right;
-    }
-    #footer1 {
-        position:fixed;
-        top:750px;
+}
+
+#contents {
+    width: 68%;
+    height: 2000px;
+    float: left;
+}
+
+.box1 {
+width: 80%;
+border:1px solid black;
+float: left;
+}
+#bottom1 {
+width: 100%;
+height: 100px;
+background-color: #888888;
+clear: left;
+}
+#bottom2 {
         width: 100%;
-        height: 100px;
+        height: 110px;
         background-color: #888888;
         clear: left;
     }
+#bottom3 {
+            width: 100%;
+            height: 100px;
+            background-color: #888888;
+            clear: left;
+        }
+#footer {
+width: 100%;
+height: 50px;
+background-color: #888888;
+clear: left;
+}
+#info {
+    left: 300px;
+    font-size: 17px;
+}
+#img {
+    width: 100%;
+}
+#img2 {
+    width: 100%;
+}
