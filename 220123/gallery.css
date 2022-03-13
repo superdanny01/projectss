@@ -23,9 +23,28 @@ ul li {list-style-type: none; float: left; margin-right: 30px;}
     width: 10%;
     height: 200px;
     border: 1px solid black;
+    float: left;
 }
-#content1 {
+#contents {
+    margin: 10px;
     width: 80%;
     height: 200px;
     border:1px solid black;
+    float: left;
 }
+.imgs {
+    margin: 10px;
+    height: 160px;
+    border: 1px solid black;
+}
+#content1 {
+    width: 100%;
+    border: 1px solid black;
+    height:200px;
+}
+#img1 {
+    height:200px;
+    float: ;
+}
+
+
